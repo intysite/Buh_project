@@ -194,7 +194,7 @@ public class HomeWork_2 {
         aramis.setTakeGoods(outskirts,15);
         System.out.println(aramis.getLogBook());
 
-        System.out.println("Остаток на складе: " + outskirts.getBalanse());
+        System.out.println("Остаток на складе: " + outskirts.getBalanse() + "шт.");
 
     }
 }
