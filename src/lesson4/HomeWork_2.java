@@ -181,15 +181,20 @@ public class HomeWork_2 {
         // У склада есть только одна позиция - Водка.
 
         Warehouse outskirts = new Warehouse(100);
-        Worker atos = new Worker("Atos", 0);
-        Worker portos = new Worker("Portos", 0);
-        Worker aramis = new Worker("Aramis", 0);
+        Worker atos = new Worker("Atos");
+        Worker portos = new Worker("Portos");
+        Worker aramis = new Worker("Aramis");
+
         atos.setTakeGoods(outskirts, 20);
         System.out.println(atos.getLogBook());
+
         portos.setTakeGoods(outskirts, 70);
         System.out.println(portos.getLogBook());
+
         aramis.setTakeGoods(outskirts,15);
         System.out.println(aramis.getLogBook());
+
+        System.out.println("Остаток на складе: " + outskirts.getBalanse());
 
     }
 }
